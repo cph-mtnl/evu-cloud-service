@@ -9,6 +9,14 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/index.html"));
 });
 
+app.get("/http", (req, res) => {
+  res.send("Hello World!");
+});
+
+app.post("/http", (req, res) => {
+  res.send("You made a POST Request, did you want to save something?");
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
