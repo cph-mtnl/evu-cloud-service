@@ -1,0 +1,5 @@
+services:
+  simple-node:
+    build: .
+    ports:
+      - "80:3000"
